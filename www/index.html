@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="index.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.10.0/js-yaml.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.8.0/dist/JsBarcode.all.min.js"></script>
+<script type="module" src="index.js"></script>
+
+<body>
+  <ul id="items"></ul>
+  <div id="version">
+    <div class="text">17.12.05</div>
+  </div>
+</body>
+
+<template id="item-template">
+  <li>
+    <div class="item">
+      <div class="name">
+        <div class="text"></div>
+      </div>
+      <div class="barcode">
+        <svg class="barcode-render"></svg>
+      </div>
+      <div class="value">
+        <div class="text"></div>
+      </div>
+    </div>
+    <div class="item-number-container">
+      <div class="item-number"></div>
+    </div>
+    <div class="icon-container">
+      <img class="icon">
+    </div>
+  </li>
+</template>
