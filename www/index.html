@@ -1,33 +1,88 @@
-<link rel="stylesheet" href="index.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.10.0/js-yaml.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.8.0/dist/JsBarcode.all.min.js"></script>
-<script type="module" src="index.js"></script>
+<head>
+	<link rel="stylesheet" href="index.css" />
+	<script type="module" src="index.js"></script>
+</head>
 
-<body>
-  <ul id="items"></ul>
-  <div id="version">
-    <div class="text">17.12.05</div>
-  </div>
+<template id="icons-map-template">
+	<img id="apple" src="./assets/apple.png" />
+	<img id="avocado" src="./assets/avocado.png" />
+	<img id="bag" src="./assets/shopping-bag.png" />
+	<img id="banana" src="./assets/banana.png" />
+	<img id="citrus1" src="./assets/citrus.png" />
+	<img id="citrus2" src="./assets/orange.png" />
+	<img id="citrus3" src="./assets/orange-filled.png" />
+	<img id="cucumber" src="./assets/cucumber.png" />
+	<img id="mango" src="./assets/mango.png" />
+	<img id="onion" src="./assets/onion.png" />
+	<img id="pineapple" src="./assets/pineapple.png" />
+	<img id="potato" src="./assets/potato.png" />
+	<img id="sweetpotato" src="./assets/sweet-potato.png" />
+</template>
+
+<body class="mainRoot">
+	<div class="mainHeader">
+		<div class="brand">
+			<img class="logo" src="./assets/target.png" />
+			<span>1058 Columbus Central</span>
+		</div>
+	</div>
+	<div class="mainContent">
+		<ul id="items-list" class="storeItem__list">
+			<x-qr-item icon="apple" name="Apple, Honey Crisp" value="4195"></x-qr-item>
+			<x-qr-item icon="apple" name="Apple, Gala" value="4205"></x-qr-item>
+			<x-qr-item icon="apple" name="Apple, Granny Smith" value="4575"></x-qr-item>
+			<x-qr-item icon="banana" name="Banana" value="8011"></x-qr-item>
+			<x-barcode-item icon="banana" name="Organic Bananas, Bunch" value="074904100005"></x-barcode-item>
+			<x-qr-item icon="avocado" name="Avocado" value="4225"></x-qr-item>
+			<x-qr-item icon="cucumber" name="Cucumber, Field" value="9062"></x-qr-item>
+			<x-qr-item icon="cucumber" name="Cucumber, English" value="4593"></x-qr-item>
+			<x-qr-item icon="citrus1" name="Lemon" value="4033"></x-qr-item>
+			<x-qr-item icon="citrus1" name="Lime" value="4048"></x-qr-item>
+			<x-qr-item icon="citrus2" name="Orange" value="3107"></x-qr-item>
+			<x-qr-item icon="citrus3" name="Grapefruit" value="4288"></x-qr-item>
+			<x-qr-item icon="pineapple" name="Pineapple" value="4029"></x-qr-item>
+			<x-qr-item icon="mango" name="Mango" value="4051"></x-qr-item>
+			<x-qr-item icon="potato" name="Potato, Russet" value="4725"></x-qr-item>
+			<x-qr-item icon="sweetpotato" name="Sweet Potato" value="9091"></x-qr-item>
+			<x-qr-item icon="onion" name="Onion, Yellow" value="4666"></x-qr-item>
+			<x-qr-item icon="onion" name="Onion, White" value="4660"></x-qr-item>
+			<x-qr-item icon="onion" name="Onion, Red" value="4085"></x-qr-item>
+			<x-barcode-item icon="bag" name="Reusable Bag Discount" value="98560502101779570128393650"></x-barcode-item>
+		</ul>
+	</div>
+	<div class="mainFooter">
+		<div>2020.11.30</div>
+		<div class="spacer"></div>
+		<div>target.turtlemay.us</div>
+	</div>
 </body>
 
-<template id="item-template">
-  <li>
-    <div class="item">
-      <div class="name">
-        <div class="text"></div>
-      </div>
-      <div class="barcode">
-        <svg class="barcode-render"></svg>
-      </div>
-      <div class="value">
-        <div class="text"></div>
-      </div>
-    </div>
-    <div class="item-number-container">
-      <div class="item-number"></div>
-    </div>
-    <div class="icon-container">
-      <img class="icon">
-    </div>
-  </li>
+<template id="qr-item-template">
+	<li class="storeItem__li qrItem qrItem__bgContainer">
+		<div class="storeItem__ordinal"></div>
+		<div class="qrItem__bg" data-id="icon"></div>
+		<div class="qrItem__fg qrItem__columnContainer">
+			<div>
+				<canvas></canvas>
+			</div>
+			<div>
+				<div class="qrItem__label" data-id="name"></div>
+				<div class="qrItem__value" data-id="value"></div>
+			</div>
+		</div>
+	</li>
+</template>
+
+<template id="barcode-item-template">
+	<li class="storeItem__li barcodeItem barcodeItem__iconContainer">
+		<div class="storeItem__ordinal"></div>
+		<div class="barcodeItem__bg barcodeItem__icon" data-id="icon"></div>
+		<div class="barcodeItem__fg">
+			<div class="barcodeItem__barcodeContainer barcodeItem__labelContainer">
+				<div class="barcodeItem__label" data-id="name"></div>
+				<canvas></canvas>
+			</div>
+			<div class="barcodeItem__value" data-id="value"></div>
+		</div>
+	</li>
 </template>
