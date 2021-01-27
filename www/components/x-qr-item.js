@@ -1,4 +1,4 @@
-import "../lib/qrcode.min.js";
+import QRCode from "../web_modules/qrcode.js";
 
 import { getIconUrl } from "../index.js";
 

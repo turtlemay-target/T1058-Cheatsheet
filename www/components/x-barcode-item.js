@@ -1,4 +1,4 @@
-import "../lib/JsBarcode.all.min.js";
+import JsBarcode from "../web_modules/jsbarcode.js";
 
 import { getIconUrl } from "../index.js";
 

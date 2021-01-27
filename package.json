@@ -1,0 +1,13 @@
+{
+	"private": true,
+	"scripts": {
+		"postinstall": "node scripts/esinstall.mjs"
+	},
+	"devDependencies": {
+		"esinstall": "^1.0.3"
+	},
+	"dependencies": {
+		"jsbarcode": "^3.11.3",
+		"qrcode": "^1.4.4"
+	}
+}
