@@ -6,4 +6,4 @@ View [in browser](https://7dd8b1.netlify.app/) or see [pre-rendered documents](h
 
 ## Usage
 
-Serve www directory and view index.html in browser.
+Serve `www` directory and view `index.html` in browser.
