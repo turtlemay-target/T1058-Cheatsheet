@@ -6,4 +6,4 @@ View and print [in browser](https://7dd8b1.netlify.app/) or see [pre-rendered do
 
 ## Usage
 
-Serve `www` directory and view `index.html` in browser.
+Build dependencies with `npm install`, serve `www` directory and view `index.html` in browser.
