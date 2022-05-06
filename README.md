@@ -8,4 +8,6 @@ Icons licensed by [Icons8](https://icons8.com).
 
 ## Usage
 
-Download repo and build dependencies with `npm install`. Place images in `assets` directory and edit `index.html` to add or change items. To render, serve `www` directory and view `index.html` in browser.
+Download repo, place images in `assets` directory, and edit `index.html` to add or change items. To render, serve the `www` directory and view `index.html` in a browser.
+
+Build dependencies with `npm install`.
