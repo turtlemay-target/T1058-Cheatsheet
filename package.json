@@ -1,5 +1,9 @@
 {
 	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/turtlemay-target/T1058-Cheatsheet"
+	},
 	"scripts": {
 		"postinstall": "node esinstall.mjs"
 	},
