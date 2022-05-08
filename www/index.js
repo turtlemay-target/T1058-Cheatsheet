@@ -2,9 +2,10 @@ import "./components/x-qr-item.js";
 import "./components/x-barcode-item.js";
 
 /**
- * @param {string | null} name
+ * @param {string | null} icon The registed icon name or an image URL.
  */
-export function getIconUrl(name = "") {
+export function getIconUrl(icon = "") {
 	const template = document.getElementsByTagName("template").namedItem("icons-map-template");
-	return template?.content?.getElementById(name ?? "")?.getAttribute("src") ?? "";
+	const url = template?.content?.getElementById(icon ?? "")?.getAttribute("src") ?? null;
+	return url ?? icon;
 }
