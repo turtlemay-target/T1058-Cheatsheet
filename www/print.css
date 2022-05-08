@@ -1,0 +1,19 @@
+* {
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+	color-adjust: exact;
+}
+
+@page {
+	size: letter landscape;
+	margin: 0;
+}
+
+@media print {
+	:root {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: none;
+	}
+}

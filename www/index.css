@@ -1,15 +1,7 @@
-@page {
-	size: letter landscape;
-	margin: 0;
-}
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-	print-color-adjust: exact;
-	color-adjust: exact;
 }
 
 ul, li {
@@ -202,13 +194,4 @@ body {
 	font: 10pt Iosevka, monospace;
 	margin: 0.5em 0;
 	text-align: center;
-}
-
-@media print {
-	:root {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: none;
-	}
 }
