@@ -1,6 +1,3 @@
-import "./components/x-qr-item.js";
-import "./components/x-barcode-item.js";
-
 /**
  * @param {string | null} icon The registed icon name or an image URL.
  */
