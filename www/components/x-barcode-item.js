@@ -1,6 +1,6 @@
 import JsBarcode from "../web_modules/jsbarcode.js";
 
-import { getIconUrl } from "../index.js";
+import { getIconUrl } from "../icons.js";
 
 customElements.define(
 	"x-barcode-item",

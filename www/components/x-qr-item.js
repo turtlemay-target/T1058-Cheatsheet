@@ -1,6 +1,6 @@
 import QRCode from "../web_modules/qrcode.js";
 
-import { getIconUrl } from "../index.js";
+import { getIconUrl } from "../icons.js";
 
 customElements.define(
 	"x-qr-item",
