@@ -4,7 +4,7 @@ import { getIconUrl } from "../icons.js";
 
 customElements.define("x-barcode-item", class extends HTMLElement {
 	connectedCallback() {
-		const template = document.getElementsByTagName("template").namedItem("barcode-item-template");
+		const template = document.getElementsByTagName("template").namedItem("x-barcode-item-template");
 
 		if (!template) return;
 

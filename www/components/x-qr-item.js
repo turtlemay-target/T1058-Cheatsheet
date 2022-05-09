@@ -4,7 +4,7 @@ import { getIconUrl } from "../icons.js";
 
 customElements.define("x-qr-item", class extends HTMLElement {
 	connectedCallback() {
-		const template = document.getElementsByTagName("template").namedItem("qr-item-template");
+		const template = document.getElementsByTagName("template").namedItem("x-qr-item-template");
 
 		if (!template) return;
 
