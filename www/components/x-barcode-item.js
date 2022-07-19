@@ -1,7 +1,5 @@
 import JsBarcode from "../web_modules/jsbarcode.js";
 
-import { getIconUrl } from "../icons.js";
-
 customElements.define("x-barcode-item", class extends HTMLElement {
 	connectedCallback() {
 		const template = document.getElementsByTagName("template").namedItem("x-barcode-item-template");
@@ -10,7 +8,7 @@ customElements.define("x-barcode-item", class extends HTMLElement {
 
 		const name = this.getAttribute("name");
 		const value = this.getAttribute("value");
-		const iconUrl = getIconUrl(this.getAttribute("icon"));
+		const iconUrl = this.getAttribute("icon");
 
 		const f = document.importNode(template.content, true);
 
