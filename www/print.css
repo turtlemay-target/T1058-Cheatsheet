@@ -16,4 +16,8 @@
 		justify-content: center;
 		background: none;
 	}
+
+	.mainRoot {
+		margin: 0;
+	}
 }

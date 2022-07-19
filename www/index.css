@@ -30,6 +30,7 @@ body {
 	grid-template-columns: 1fr;
 	grid-template-rows: auto 1fr auto;
 	padding: 0.2in;
+	margin: 0 2em 2em;
 	background: white;
 	font: 1em Iosevka, sans-serif;
 }
