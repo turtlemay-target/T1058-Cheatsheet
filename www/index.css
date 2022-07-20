@@ -23,7 +23,7 @@ body {
 	height: 8.5in;
 }
 
-.mainRoot {
+.pageRoot {
 	width: 100%;
 	height: 100%;
 	display: grid;
@@ -35,23 +35,23 @@ body {
 	font: 1em Iosevka, sans-serif;
 }
 
-.mainHeader {
+.pageHeader {
 	padding: 0 0 0.1in;
 	font: 10pt Iosevka, sans-serif;
 }
 
-.mainHeader .logo {
+.pageHeader .logo {
 	--size: 1em;
 	width: var(--size);
 	height: var(--size);
 	margin: 0 -0.25em -0.1em 0;
 }
 
-.mainContent {
+.pageContent {
 	display: grid;
 }
 
-.mainFooter {
+.pageFooter {
 	padding: 0.1in 0 0;
 	font: 10pt Iosevka, monospace;
 	color: #666;
