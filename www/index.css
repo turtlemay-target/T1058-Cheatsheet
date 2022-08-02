@@ -110,7 +110,7 @@ x-page, .pageRoot {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	filter: opacity(0.5);
+	filter: opacity(0.4);
 }
 
 .qrItem {
@@ -132,7 +132,7 @@ x-page, .pageRoot {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	filter: opacity(0.5);
+	filter: opacity(0.4);
 }
 
 .qrItem__fg {
@@ -190,7 +190,7 @@ x-page, .pageRoot {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	filter: opacity(0.5);
+	filter: opacity(0.4);
 }
 
 .barcodeItem__barcodeContainer {
