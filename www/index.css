@@ -63,9 +63,14 @@ x-page, .pageRoot {
 	grid-template-columns: auto 1fr auto;
 }
 
-.storeItem__list {
+.producePage .storeItem__list {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.waterPage .storeItem__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .storeItem__li {
