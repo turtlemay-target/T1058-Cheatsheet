@@ -152,7 +152,6 @@ body {
 }
 
 .barcodeItem__fg {
-	z-index: 1;
 	margin: 2em 0 0;
 }
 
@@ -174,23 +173,25 @@ body {
 }
 
 .barcodeItem__barcodeContainer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	position: relative;
+	min-width: 1.75in;
 }
 
 .barcodeItem canvas {
-	min-width: 1.75in;
-	max-height: 0.5in;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .barcodeItem__labelContainer {
 	position: relative;
+	padding: 0.75em 0;
 }
 
 .barcodeItem__label {
-	position: absolute;
-	width: 100%;
+	position: relative;
 	font: 12pt "Iosevka Web", sans-serif;
 	padding: 0.1em 0;
 	letter-spacing: -0.025em;
