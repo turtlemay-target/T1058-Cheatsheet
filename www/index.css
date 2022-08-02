@@ -37,12 +37,12 @@ body {
 	padding: 0.2in;
 	margin: 0 2em 2em;
 	background: white;
-	font: 1em Iosevka, sans-serif;
+	font: 1em "Iosevka Web", sans-serif;
 }
 
 .pageHeader {
 	padding: 0 0 0.1in;
-	font: 10pt Iosevka, sans-serif;
+	font: 10pt "Iosevka Web", sans-serif;
 }
 
 .pageHeader .logo {
@@ -58,7 +58,7 @@ body {
 
 .pageFooter {
 	padding: 0.1in 0 0;
-	font: 10pt Iosevka, monospace;
+	font: 10pt "Iosevka Web", monospace;
 	color: #666;
 	display: grid;
 	grid-template-columns: auto 1fr auto;
@@ -77,7 +77,7 @@ body {
 }
 
 .storeItem__ordinal {
-	font: 10pt Iosevka, monospace;
+	font: 10pt "Iosevka Web", monospace;
 	color: #a0a0a0;
 	position: absolute;
 	top: 0;
@@ -131,14 +131,14 @@ body {
 
 .qrItem__label {
 	max-width: 8em;
-	font: 12pt Iosevka, sans-serif;
+	font: 12pt "Iosevka Web", sans-serif;
 	margin: 0.5em 0;
 	letter-spacing: -0.025em;
 	word-spacing: -0.25em;
 }
 
 .qrItem__value {
-	font: 14pt Iosevka, monospace;
+	font: 14pt "Iosevka Web", monospace;
 	background: #b0b0b0;
 	border: 1px solid #999;
 	display: inline-block;
@@ -191,7 +191,7 @@ body {
 .barcodeItem__label {
 	position: absolute;
 	width: 100%;
-	font: 12pt Iosevka, sans-serif;
+	font: 12pt "Iosevka Web", sans-serif;
 	padding: 0.1em 0;
 	letter-spacing: -0.025em;
 	word-spacing: -0.25em;
@@ -200,7 +200,7 @@ body {
 }
 
 .barcodeItem__value {
-	font: 10pt Iosevka, monospace;
+	font: 10pt "Iosevka Web", monospace;
 	margin: 0.5em 0;
 	text-align: center;
 }
