@@ -204,6 +204,9 @@ x-page, .pageRoot {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	border: 1px solid white;
+	border-top: none;
+	border-bottom: none;
 }
 
 .barcodeItem__labelContainer {
