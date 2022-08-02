@@ -17,7 +17,7 @@
 		background: none;
 	}
 
-	.pageRoot {
+	x-page, .pageRoot {
 		margin: 0;
 	}
 }
