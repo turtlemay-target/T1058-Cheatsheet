@@ -62,9 +62,9 @@
 		<x-qr-item name="Watermelon, Seedless" value="4032" icon="./assets/watermelon.png"></x-qr-item>
 		<x-barcode-item name="Watermelon, Mini" value="033383402437" icon="./assets/watermelon.png"></x-barcode-item>
 		<x-barcode-item name="Grapes, Green 1.5lb" value="014668715046" icon="./assets/grapes-white.png"></x-barcode-item>
-		<x-barcode-item name="Grapes, Org Green 1.5lb" value="014668715060" icon="./assets/grapes-white.png"></x-barcode-item>
+		<x-barcode-item name="Grapes, Org Green 1.5lb" value="014668715060" icon="./assets/grapes-white.png" badge-icon="./assets/leaves.png"></x-barcode-item>
 		<x-barcode-item name="Grapes, Red 1.5lb" value="014668715053" icon="./assets/grapes-black.png"></x-barcode-item>
-		<x-barcode-item name="Grapes, Org Red 1.5lb" value="014668715077" icon="./assets/grapes-black.png"></x-barcode-item>
+		<x-barcode-item name="Grapes, Org Red 1.5lb" value="014668715077" icon="./assets/grapes-black.png" badge-icon="./assets/leaves.png"></x-barcode-item>
 		<x-qr-item name="Corn, Yellow" value="4078" icon="./assets/corn.png"></x-qr-item>
 		<x-qr-item name="Lettuce" value="4061" icon="./assets/lettuce.png"></x-qr-item>
 		<x-barcode-item name="Cabbage" value="605806135057" icon="./assets/cabbage.png"></x-barcode-item>
@@ -118,9 +118,10 @@
 </template>
 
 <template id="x-qr-item-template">
-	<li class="storeItem__li qrItem qrItem__bgContainer">
+	<li class="storeItem__li storeItem__badgeIconContainer qrItem qrItem__bgContainer">
 		<div class="storeItem__ordinal"></div>
 		<div class="qrItem__bg" data-id="icon"></div>
+		<div class="storeItem__badgeIcon" data-id="badge-icon"></div>
 		<div class="qrItem__fg qrItem__columnContainer">
 			<div>
 				<canvas></canvas>
@@ -134,9 +135,10 @@
 </template>
 
 <template id="x-barcode-item-template">
-	<li class="storeItem__li barcodeItem barcodeItem__iconContainer">
+	<li class="storeItem__li storeItem__badgeIconContainer barcodeItem barcodeItem__iconContainer">
 		<div class="storeItem__ordinal"></div>
 		<div class="barcodeItem__bg barcodeItem__icon" data-id="icon"></div>
+		<div class="storeItem__badgeIcon" data-id="badge-icon"></div>
 		<div class="barcodeItem__fg">
 			<div class="barcodeItem__barcodeContainer barcodeItem__labelContainer">
 				<canvas></canvas>

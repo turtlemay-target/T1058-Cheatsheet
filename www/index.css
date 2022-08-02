@@ -70,6 +70,7 @@ x-page, .pageRoot {
 
 .storeItem__li {
 	--icon-size: 5em;
+	--badge-icon-size: 2em;
 	position: relative;
 	border: 1px dashed #f5f5f5;
 	overflow: hidden;
@@ -89,6 +90,22 @@ x-page, .pageRoot {
 .storeItem__ordinal::after {
 	counter-increment: item-numbers;
 	content: counter(item-numbers);
+}
+
+.storeItem__badgeIconContainer {
+	position: relative;
+}
+
+.storeItem__badgeIcon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: var(--badge-icon-size);
+	height: var(--badge-icon-size);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	filter: opacity(0.5);
 }
 
 .qrItem {

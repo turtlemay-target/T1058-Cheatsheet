@@ -9,6 +9,7 @@ customElements.define("x-barcode-item", class extends HTMLElement {
 		const name = this.getAttribute("name");
 		const value = this.getAttribute("value");
 		const iconUrl = this.getAttribute("icon");
+		const badgeIconUrl = this.getAttribute("badge-icon");
 
 		const f = document.importNode(template.content, true);
 
@@ -19,10 +20,14 @@ customElements.define("x-barcode-item", class extends HTMLElement {
 		/** @type {HTMLElement | null} */
 		const bgEl = f.querySelector('[data-id="icon"]');
 
+		/** @type {HTMLElement | null} */
+		const badgeIconEl = f.querySelector('[data-id="badge-icon"]');
+
 		if (nameEl) nameEl.textContent = name;
 		if (valueEl) valueEl.textContent = value;
 		if (canvasEl && value) renderBarcode(canvasEl, value);
 		if (bgEl) bgEl.style.backgroundImage = `url("${iconUrl}")`;
+		if (badgeIconEl) badgeIconEl.style.backgroundImage = `url("${badgeIconUrl}")`;
 
 		this.replaceWith(f);
 	}
