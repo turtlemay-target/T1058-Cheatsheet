@@ -13,6 +13,6 @@ customElements.define("x-page", class extends HTMLElement {
 		for (const v of this.querySelectorAll("*"))
 			parentEl?.append(v);
 
-		this.replaceWith(f);
+		this.append(f);
 	}
 });

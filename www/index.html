@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<x-page date="2020.11.30">
+	<x-page class="startItemNumbering" date="2020.11.30">
 		<x-qr-item name="Apple, Honey Crisp" value="4195" icon="./assets/apple.png"></x-qr-item>
 		<x-qr-item name="Apple, Gala" value="4205" icon="./assets/apple.png"></x-qr-item>
 		<x-qr-item name="Apple, Granny Smith" value="4575" icon="./assets/apple.png"></x-qr-item>
@@ -32,8 +32,7 @@
 		<x-qr-item name="Onion, Red" value="4085" icon="./assets/onion.png"></x-qr-item>
 		<x-barcode-item name="Reusable Bag Discount" value="98560502101779570128393650" icon="./assets/shopping-bag.png"></x-barcode-item>
 	</x-page>
-	<x-page>
-		<span class="startItemNumbering"></span>
+	<x-page class="startItemNumbering">
 		<x-qr-item name="Apple, Honey Crisp" value="4195" icon="./assets/apple.png"></x-qr-item>
 		<x-qr-item name="Apple, Gala" value="4205" icon="./assets/apple.png"></x-qr-item>
 		<x-qr-item name="Apple, Granny Smith" value="4575" icon="./assets/apple.png"></x-qr-item>
@@ -75,8 +74,7 @@
 		<div class="spacer"></div>
 		<div class="spacer"></div>
 	</x-page>
-	<x-page>
-		<span class="startItemNumbering"></span>
+	<x-page class="startItemNumbering">
 		<x-barcode-item name="24pk Good & Gather" value="085239045381" icon="./assets/bottles.png"></x-barcode-item>
 		<x-barcode-item name="32pk Good & Gather" value="085239113127" icon="./assets/bottles.png"></x-barcode-item>
 		<div class="spacer"></div>
@@ -103,21 +101,19 @@
 </body>
 
 <template id="x-page-template">
-	<div class="pageRoot">
-		<div class="pageHeader">
-			<div class="brand">
-				<img class="logo" src="./assets/target.png" />
-				<span>1058 Columbus Central</span>
-			</div>
+	<div class="pageHeader">
+		<div class="brand">
+			<img class="logo" src="./assets/target.png" />
+			<span>1058 Columbus Central</span>
 		</div>
-		<div class="pageContent">
-			<ul id="items-list" class="storeItem__list"></ul>
-		</div>
-		<div class="pageFooter">
-			<div class="postDate"></div>
-			<div class="spacer"></div>
-			<div>target.turtlemay.us</div>
-		</div>
+	</div>
+	<div class="pageContent">
+		<ul id="items-list" class="storeItem__list"></ul>
+	</div>
+	<div class="pageFooter">
+		<div class="postDate"></div>
+		<div class="spacer"></div>
+		<div>target.turtlemay.us</div>
 	</div>
 </template>
 

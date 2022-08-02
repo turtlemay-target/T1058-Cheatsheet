@@ -20,7 +20,6 @@ canvas {
 
 .startItemNumbering {
 	counter-reset: item-numbers;
-	position: absolute;
 }
 
 body {
@@ -28,7 +27,7 @@ body {
 	height: 8.5in;
 }
 
-.pageRoot {
+x-page, .pageRoot {
 	width: 100%;
 	height: 100%;
 	display: grid;
