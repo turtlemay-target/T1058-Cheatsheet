@@ -39,6 +39,7 @@ customElements.define("x-barcode-item", class extends HTMLElement {
  */
 function renderBarcode(elem, value) {
 	JsBarcode(elem, value, {
+		format: "CODE128",
 		displayValue: false,
 		height: 100,
 		width: 1,
