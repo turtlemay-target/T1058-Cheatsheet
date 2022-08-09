@@ -1,4 +1,4 @@
-import QRCode from "../web_modules/qrcode.js";
+import QRCode from "qrcode";
 
 customElements.define("x-qr-item", class extends HTMLElement {
 	connectedCallback() {

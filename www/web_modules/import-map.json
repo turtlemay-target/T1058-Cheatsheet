@@ -1,6 +1,0 @@
-{
-  "imports": {
-    "jsbarcode": "./jsbarcode.js",
-    "qrcode": "./qrcode.js"
-  }
-}
