@@ -1,4 +1,4 @@
-import JsBarcode from "jsbarcode";
+import JsBarcode from "https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/+esm";
 
 customElements.define("x-barcode-item", class extends HTMLElement {
 	connectedCallback() {
